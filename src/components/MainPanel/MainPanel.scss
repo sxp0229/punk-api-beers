@@ -1,0 +1,14 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.main {
+  border: 4px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+
+  &__heading {
+    text-align: center;
+    color: $color-primary;
+  }
+}

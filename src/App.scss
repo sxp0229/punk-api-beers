@@ -1,0 +1,6 @@
+@use "./assets/sass/_variables.scss" as *;
+
+.App {
+  border: 4px solid $color-primary;
+  display: flex;
+}

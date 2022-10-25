@@ -1,0 +1,57 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+*{
+  margin:3px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.all-beer-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  width:auto;
+
+  .beer-tile {
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px lightgray;
+    margin: 15px;
+    padding: 5px;
+    // width: 100%;
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+    }
+    &__img {
+      height: 200px;
+      padding: 15px;
+    }
+    &__tag {
+      font-style: italic;
+    }
+    &__desc {
+      text-align: justify;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+  .all-beer-tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 20px;
+
+    &__img {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
