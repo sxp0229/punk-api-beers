@@ -5,13 +5,13 @@ const BeerTiles = (props) => {
   const { beersArr } = props;
 
   const beerListJSX = beersArr.map((beer) => (
-    <div className="beer-tile">
+    <div className="beer-tile" key={beer.id}>
       <div className="img-container">
         <img
           className="beer-tile__img"
           src={beer.image_url}
           alt={beer.name}
-          key={beer.id}
+          // key={beer.id}
         />
       </div>
       <h2>{beer.name}</h2>

@@ -3,20 +3,20 @@ import SearchBox from "../SearchBox/SearchBox";
 import "./Nav.scss"
 
 
-const Nav = ({ searchTerm, handleInput, onChange, selected, filterCategory } ) => {
+const Nav = ({ searchTerm, handleInput, abvSelected, phSelected, classicSelected } ) => {
  
   return (
     <>
-    <div key={filter.id}  className="nav">
+    <div className="nav">
       <SearchBox
         label={"Search for Beers"}
         searchTerm={searchTerm}
         handleInput={handleInput}
       />
       <FilterList 
-        onChange={onChange}
-        selected={selected}
-        category={filterCategory}
+        abvSelected={abvSelected}
+        classicSelected={classicSelected}
+        phSelected={phSelected}
       />
     </div>
     </>
