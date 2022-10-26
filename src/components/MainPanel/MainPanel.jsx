@@ -8,7 +8,6 @@ const MainPanel = (props) => {
     <div className="main">
         <h2 className="main__heading">Brewdog's Beer Catalog</h2>
           <div className="all-beers">
-            <h1>HI THERE</h1>
             <BeerTiles beersArr={beers} />
           </div>
     </div>
